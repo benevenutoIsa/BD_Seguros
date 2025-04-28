@@ -37,7 +37,7 @@ erDiagram
     Oficina ||--o{ Sinistro_Oficina : realiza_reparo
 
     Cliente {
-        char(11) cpf PK
+        varchar cpf
         varchar nome
         date data_nascimento
         varchar telefone
@@ -46,18 +46,18 @@ erDiagram
     }
     
     Veiculo {
-        char(11) renavam PK
+        varchar renavam
         varchar placa
         varchar marca
         varchar modelo
         int ano
         varchar cor
         decimal valor_mercado
-        char(11) cpf_cliente FK
+        varchar cpf_cliente
     }
     
     Corretor {
-        int id_corretor PK
+        int id_corretor
         varchar nome
         varchar registro
         decimal comissao
@@ -65,33 +65,33 @@ erDiagram
     }
     
     Apolice {
-        int numero_apolice PK
+        int numero_apolice
         date data_inicio
         date data_fim
         decimal valor_premio
         varchar status
-        char(11) renavam_veiculo FK
-        int id_corretor FK
+        varchar renavam_veiculo
+        int id_corretor
     }
     
     Cobertura {
-        int id_cobertura PK
+        int id_cobertura
         varchar tipo
         text descricao
         decimal valor_maximo
     }
     
     Sinistro {
-        int id_sinistro PK
+        int id_sinistro
         date data_ocorrencia
         text descricao
         varchar local
         decimal valor_estimado
-        int numero_apolice FK
+        int numero_apolice
     }
     
     Oficina {
-        char(14) cnpj PK
+        varchar cnpj
         varchar nome
         varchar endereco
         varchar telefone
@@ -99,22 +99,20 @@ erDiagram
     }
     
     Apolice_Cobertura {
-        int numero_apolice FK
-        int id_cobertura FK
+        int numero_apolice
+        int id_cobertura
         decimal valor_especifico
         decimal franquia
         decimal percentual_cobertura
-        PK (numero_apolice, id_cobertura)
     }
     
     Sinistro_Oficina {
-        int id_sinistro FK
-        char(14) cnpj_oficina FK
+        int id_sinistro
+        varchar cnpj_oficina
         decimal valor_orcamento
         date data_entrada
         date data_prevista
         varchar status_reparo
-        PK (id_sinistro, cnpj_oficina)
     }
 
 ```
