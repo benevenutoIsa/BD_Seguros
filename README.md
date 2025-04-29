@@ -159,3 +159,54 @@ O arquivo `requirements.txt` deve conter:
 pandas
 supabase
 ```
+> **Observação:** Caso esteja usando Supabase, você precisa configurar a URL e a API KEY corretamente no `third_task.py`.
+
+---
+
+### 2. Gerar dados fictícios
+
+Execute o script que gera os dados:
+
+```bash
+python first_task.py
+```
+
+- Isso irá criar arquivos `.csv` contendo os dados no diretório `data/`.
+
+---
+
+### 3. Validar os dados
+
+Execute o script de validação para garantir que os dados gerados são consistentes:
+
+```bash
+python second_task.py
+```
+
+- O script irá informar no terminal se encontrou algum erro.
+
+---
+
+### 4. Gerar comandos SQL e inserir no Supabase
+
+Gere o arquivo `insert_data.sql` e insira automaticamente os dados na sua instância Supabase:
+
+```bash
+python third_task.py
+```
+
+- Este script cria os comandos `INSERT INTO` e executa diretamente no banco.
+- Para que funcione, certifique-se de que a tabela no Supabase já foi criada com o modelo correto.
+
+---
+
+## 🚀 Considerações Finais
+
+Este projeto foi idealizado para demonstrar a construção de bases de dados completas, integrando:
+
+- Modelagem de dados prática
+- Geração e validação de grandes volumes de dados
+- Integração com plataformas modernas (como o Supabase)
+- Práticas SQL avançadas
+
+Contribuições e melhorias são sempre bem-vindas! 💬
