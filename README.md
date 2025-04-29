@@ -211,3 +211,4 @@ erDiagram
     }
 
 ```
+![](https://github.com/benevenutoIsa/BD_Seguros/blob/main/foto.jpeg)
