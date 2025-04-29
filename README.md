@@ -25,99 +25,6 @@ Todos os relacionamentos foram modelados de forma a refletir situações reais d
 
 ---
 
-```mermaid
-erDiagram
-    Cliente ||--o{ Veiculo : possui
-    Veiculo ||--o{ Apolice : possui
-    Corretor ||--o{ Apolice : gerencia
-    Apolice ||--o{ Sinistro : gera
-    Apolice ||--o{ Apolice_Cobertura : contem
-    Cobertura ||--o{ Apolice_Cobertura : pertence
-    Sinistro ||--o{ Sinistro_Oficina : acontece_em
-    Oficina ||--o{ Sinistro_Oficina : realiza_reparo
-
-    Cliente {
-        varchar cpf
-        varchar nome
-        date data_nascimento
-        varchar telefone
-        varchar email
-        varchar endereco
-    }
-    
-    Veiculo {
-        varchar renavam
-        varchar placa
-        varchar marca
-        varchar modelo
-        int ano
-        varchar cor
-        decimal valor_mercado
-        varchar cpf_cliente
-    }
-    
-    Corretor {
-        int id_corretor
-        varchar nome
-        varchar registro
-        decimal comissao
-        varchar telefone
-    }
-    
-    Apolice {
-        int numero_apolice
-        date data_inicio
-        date data_fim
-        decimal valor_premio
-        varchar status
-        varchar renavam_veiculo
-        int id_corretor
-    }
-    
-    Cobertura {
-        int id_cobertura
-        varchar tipo
-        text descricao
-        decimal valor_maximo
-    }
-    
-    Sinistro {
-        int id_sinistro
-        date data_ocorrencia
-        text descricao
-        varchar local
-        decimal valor_estimado
-        int numero_apolice
-    }
-    
-    Oficina {
-        varchar cnpj
-        varchar nome
-        varchar endereco
-        varchar telefone
-        varchar especialidade
-    }
-    
-    Apolice_Cobertura {
-        int numero_apolice
-        int id_cobertura
-        decimal valor_especifico
-        decimal franquia
-        decimal percentual_cobertura
-    }
-    
-    Sinistro_Oficina {
-        int id_sinistro
-        varchar cnpj_oficina
-        decimal valor_orcamento
-        date data_entrada
-        date data_prevista
-        varchar status_reparo
-    }
-
-```
----
-
 ## 🗂️ Estrutura do Projeto
 
 ```bash
@@ -210,3 +117,97 @@ Este projeto foi idealizado para demonstrar a construção de bases de dados com
 - Práticas SQL avançadas
 
 Contribuições e melhorias são sempre bem-vindas! 💬
+
+---
+
+```mermaid
+erDiagram
+    Cliente ||--o{ Veiculo : possui
+    Veiculo ||--o{ Apolice : possui
+    Corretor ||--o{ Apolice : gerencia
+    Apolice ||--o{ Sinistro : gera
+    Apolice ||--o{ Apolice_Cobertura : contem
+    Cobertura ||--o{ Apolice_Cobertura : pertence
+    Sinistro ||--o{ Sinistro_Oficina : acontece_em
+    Oficina ||--o{ Sinistro_Oficina : realiza_reparo
+
+    Cliente {
+        varchar cpf
+        varchar nome
+        date data_nascimento
+        varchar telefone
+        varchar email
+        varchar endereco
+    }
+    
+    Veiculo {
+        varchar renavam
+        varchar placa
+        varchar marca
+        varchar modelo
+        int ano
+        varchar cor
+        decimal valor_mercado
+        varchar cpf_cliente
+    }
+    
+    Corretor {
+        int id_corretor
+        varchar nome
+        varchar registro
+        decimal comissao
+        varchar telefone
+    }
+    
+    Apolice {
+        int numero_apolice
+        date data_inicio
+        date data_fim
+        decimal valor_premio
+        varchar status
+        varchar renavam_veiculo
+        int id_corretor
+    }
+    
+    Cobertura {
+        int id_cobertura
+        varchar tipo
+        text descricao
+        decimal valor_maximo
+    }
+    
+    Sinistro {
+        int id_sinistro
+        date data_ocorrencia
+        text descricao
+        varchar local
+        decimal valor_estimado
+        int numero_apolice
+    }
+    
+    Oficina {
+        varchar cnpj
+        varchar nome
+        varchar endereco
+        varchar telefone
+        varchar especialidade
+    }
+    
+    Apolice_Cobertura {
+        int numero_apolice
+        int id_cobertura
+        decimal valor_especifico
+        decimal franquia
+        decimal percentual_cobertura
+    }
+    
+    Sinistro_Oficina {
+        int id_sinistro
+        varchar cnpj_oficina
+        decimal valor_orcamento
+        date data_entrada
+        date data_prevista
+        varchar status_reparo
+    }
+
+```
