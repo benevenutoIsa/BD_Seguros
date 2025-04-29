@@ -134,3 +134,55 @@ def generate_fake_data_seguro():
             "valor_estimado": round(random.uniform(2000, 80000), 2),
             "numero_apolice": apolice["numero_apolice"]
         })
+
+    apolice_cobertura = []
+    for apolice in apolices:
+        coberturas_selecionadas = random.sample(coberturas, random.randint(2, 4))
+        for cobertura in coberturas_selecionadas:
+            apolice_cobertura.append({
+                "numero_apolice": apolice["numero_apolice"],
+                "id_cobertura": cobertura["id_cobertura"],
+                "valor_especifico": round(random.uniform(1000, cobertura["valor_maximo"]), 2),
+                "franquia": round(random.uniform(500, 5000), 2),
+                "percentual_cobertura": round(random.uniform(50, 100), 2)
+            })
+
+    sinistro_oficina = []
+    for sinistro in sinistros:
+        oficinas_selecionadas = random.sample(oficinas, random.randint(1, 2))
+        for oficina in oficinas_selecionadas:
+            entrada = datetime.strptime(generate_random_date(2022, 2024), '%Y-%m-%d')
+            prevista = entrada + timedelta(days=random.randint(5, 30))
+            sinistro_oficina.append({
+                "id_sinistro": sinistro["id_sinistro"],
+                "cnpj_oficina": oficina["cnpj"],
+                "valor_orcamento": round(random.uniform(1000, 50000), 2),
+                "data_entrada": entrada.strftime('%Y-%m-%d'),
+                "data_prevista": prevista.strftime('%Y-%m-%d'),
+                "status_reparo": random.choice(["Em andamento", "Concluído", "Aguardando peças"])
+            })
+
+    return {
+        "clientes": clientes,
+        "corretores": corretores,
+        "veiculos": veiculos,
+        "apolices": apolices,
+        "coberturas": coberturas,
+        "oficinas": oficinas,
+        "sinistros": sinistros,
+        "apolice_cobertura": apolice_cobertura,
+        "sinistro_oficina": sinistro_oficina
+    }
+
+if __name__ == "__main__":
+    data = generate_fake_data_seguro()
+
+    if not os.path.exists("data"):
+        os.makedirs("data")
+
+    for key, value in data.items():
+        df = pd.DataFrame(value)
+        df.to_csv(f"data/{key}.csv", index=False)
+
+    print("Dados de seguro de veículos gerados com sucesso!")
+
