@@ -49,3 +49,15 @@ def generate_fake_data_seguro():
         delta = end - start
         random_days = random.randint(0, delta.days)
         return (start + timedelta(days=random_days)).strftime('%Y-%m-%d')
+
+    clientes = []
+    for i in range(50):
+        nome = generate_name()
+        clientes.append({
+            "cpf": generate_cpf(),
+            "nome": nome,
+            "data_nascimento": generate_random_date(1960, 2005),
+            "telefone": generate_phone(),
+            "email": generate_email(nome),
+            "endereco": f"Rua {random.choice(string.ascii_uppercase)}{random.randint(1, 999)}, Bairro {random.choice(string.ascii_uppercase)}"
+        })
