@@ -1,0 +1,101 @@
+id_sinistro,data_ocorrencia,descricao,local,valor_estimado,numero_apolice
+1,2023-01-31,Roubo total,São Paulo,33869.95,42
+2,2023-07-07,Incêndio no motor,Rio de Janeiro,59904.6,4
+3,2023-02-23,Colisão frontal,Rio de Janeiro,74314.05,52
+4,2024-09-30,Danos por enchente,Curitiba,71231.78,113
+5,2024-04-09,Colisão frontal,Porto Alegre,59355.88,110
+6,2023-10-03,Incêndio no motor,Porto Alegre,75252.85,98
+7,2024-12-11,Colisão frontal,Porto Alegre,10526.67,147
+8,2022-03-28,Roubo total,Porto Alegre,43953.79,117
+9,2024-03-04,Colisão frontal,Rio de Janeiro,24711.99,11
+10,2023-09-16,Danos por enchente,Curitiba,14985.95,102
+11,2022-04-22,Roubo total,Curitiba,66731.69,76
+12,2022-07-05,Colisão frontal,Rio de Janeiro,62741.03,116
+13,2022-10-05,Incêndio no motor,Curitiba,27229.95,140
+14,2023-01-02,Incêndio no motor,Porto Alegre,71936.17,7
+15,2024-07-20,Colisão frontal,Belo Horizonte,27277.83,52
+16,2022-09-11,Colisão frontal,São Paulo,57085.68,42
+17,2022-06-24,Incêndio no motor,Porto Alegre,49741.66,93
+18,2024-02-15,Incêndio no motor,São Paulo,61924.31,41
+19,2022-11-04,Roubo total,Rio de Janeiro,15951.61,86
+20,2024-05-09,Danos por enchente,Belo Horizonte,58952.62,14
+21,2023-08-15,Roubo total,São Paulo,72086.27,115
+22,2022-01-08,Danos por enchente,São Paulo,37774.13,52
+23,2022-01-12,Incêndio no motor,Rio de Janeiro,18916.16,128
+24,2024-07-18,Incêndio no motor,Curitiba,8193.58,122
+25,2023-05-17,Danos por enchente,Porto Alegre,51033.56,2
+26,2022-04-11,Roubo total,Rio de Janeiro,6294.99,54
+27,2022-03-17,Roubo total,São Paulo,54025.73,90
+28,2023-11-10,Colisão frontal,São Paulo,10493.24,77
+29,2022-11-27,Danos por enchente,Porto Alegre,53552.12,46
+30,2022-12-30,Incêndio no motor,Porto Alegre,30094.71,147
+31,2022-07-10,Danos por enchente,Belo Horizonte,30748.42,10
+32,2022-05-19,Incêndio no motor,Porto Alegre,7064.22,98
+33,2022-10-03,Colisão frontal,Belo Horizonte,27678.27,121
+34,2024-12-10,Roubo total,Rio de Janeiro,49740.19,106
+35,2024-12-19,Colisão frontal,Curitiba,58477.78,28
+36,2024-05-24,Danos por enchente,Belo Horizonte,42980.52,74
+37,2022-09-23,Incêndio no motor,Porto Alegre,58876.41,91
+38,2024-10-05,Roubo total,Porto Alegre,20152.29,128
+39,2023-02-01,Colisão frontal,São Paulo,3870.97,75
+40,2023-03-01,Incêndio no motor,Curitiba,5548.39,31
+41,2023-03-11,Colisão frontal,Rio de Janeiro,55821.33,90
+42,2022-05-19,Danos por enchente,Belo Horizonte,41521.79,66
+43,2022-01-13,Colisão frontal,Belo Horizonte,28626.2,83
+44,2022-03-01,Roubo total,Rio de Janeiro,27780.16,146
+45,2024-09-08,Incêndio no motor,São Paulo,52360.87,87
+46,2022-11-15,Incêndio no motor,Porto Alegre,71882.43,124
+47,2024-04-27,Colisão frontal,Porto Alegre,25348.81,119
+48,2022-02-08,Roubo total,Porto Alegre,55468.48,81
+49,2022-05-16,Roubo total,Belo Horizonte,67577.65,91
+50,2024-02-08,Roubo total,Porto Alegre,49243.75,87
+51,2022-08-28,Danos por enchente,Belo Horizonte,57367.52,48
+52,2024-04-27,Colisão frontal,Curitiba,70409.8,70
+53,2024-07-14,Danos por enchente,Rio de Janeiro,42957.83,96
+54,2022-08-18,Danos por enchente,São Paulo,62667.65,45
+55,2024-06-27,Colisão frontal,Curitiba,72586.55,24
+56,2023-01-25,Danos por enchente,Curitiba,59130.4,40
+57,2023-09-28,Danos por enchente,Rio de Janeiro,62019.55,135
+58,2024-11-23,Roubo total,Rio de Janeiro,58516.51,26
+59,2024-03-04,Colisão frontal,São Paulo,26256.54,118
+60,2022-06-28,Danos por enchente,Curitiba,71356.5,12
+61,2024-12-02,Danos por enchente,São Paulo,47049.67,27
+62,2023-03-06,Danos por enchente,Rio de Janeiro,17018.56,80
+63,2024-12-26,Danos por enchente,Curitiba,54347.68,71
+64,2022-11-02,Roubo total,Belo Horizonte,10927.91,70
+65,2024-11-18,Colisão frontal,Rio de Janeiro,44317.24,144
+66,2023-10-15,Danos por enchente,Rio de Janeiro,75575.67,141
+67,2023-05-17,Roubo total,São Paulo,26287.45,73
+68,2024-06-27,Colisão frontal,Rio de Janeiro,4261.43,87
+69,2022-08-05,Incêndio no motor,São Paulo,8717.33,13
+70,2023-01-02,Incêndio no motor,Porto Alegre,29738.7,101
+71,2023-02-10,Colisão frontal,Curitiba,46287.57,86
+72,2024-08-17,Colisão frontal,Curitiba,26210.55,24
+73,2024-08-21,Roubo total,Rio de Janeiro,13210.29,120
+74,2024-01-15,Incêndio no motor,Rio de Janeiro,56569.94,67
+75,2023-10-28,Incêndio no motor,Curitiba,4360.6,85
+76,2022-08-20,Danos por enchente,Curitiba,37976.85,122
+77,2023-08-02,Danos por enchente,Porto Alegre,46824.9,44
+78,2022-07-30,Incêndio no motor,São Paulo,27417.84,131
+79,2023-09-11,Incêndio no motor,Curitiba,48061.8,19
+80,2023-05-15,Roubo total,Curitiba,31937.68,62
+81,2023-03-03,Incêndio no motor,Curitiba,46242.47,88
+82,2023-04-29,Roubo total,São Paulo,59670.63,88
+83,2024-09-23,Colisão frontal,Porto Alegre,48493.89,147
+84,2022-07-19,Incêndio no motor,Rio de Janeiro,26026.79,84
+85,2022-05-23,Colisão frontal,Porto Alegre,62164.78,104
+86,2023-11-02,Incêndio no motor,São Paulo,9061.57,98
+87,2022-01-01,Roubo total,Rio de Janeiro,37332.0,36
+88,2024-03-09,Incêndio no motor,Rio de Janeiro,18041.61,75
+89,2023-09-06,Danos por enchente,Curitiba,57987.72,82
+90,2022-07-02,Colisão frontal,Porto Alegre,78940.89,89
+91,2022-09-19,Danos por enchente,São Paulo,30799.39,104
+92,2022-04-19,Colisão frontal,Porto Alegre,66018.76,141
+93,2022-08-13,Danos por enchente,São Paulo,20348.81,92
+94,2023-10-14,Incêndio no motor,Curitiba,31762.07,101
+95,2023-03-09,Roubo total,Curitiba,12847.37,140
+96,2024-02-27,Danos por enchente,Curitiba,14032.85,143
+97,2022-10-03,Colisão frontal,São Paulo,52574.36,33
+98,2024-09-23,Incêndio no motor,Rio de Janeiro,8603.75,37
+99,2024-07-22,Incêndio no motor,Porto Alegre,16024.2,107
+100,2024-05-18,Incêndio no motor,Curitiba,29713.96,131
