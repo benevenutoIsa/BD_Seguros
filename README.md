@@ -116,3 +116,46 @@ erDiagram
     }
 
 ```
+---
+
+## 🗂️ Estrutura do Projeto
+
+```bash
+/
+├── data/
+│   ├── clientes.csv
+│   ├── corretores.csv
+│   ├── veiculos.csv
+│   ├── apolices.csv
+│   ├── coberturas.csv
+│   ├── oficinas.csv
+│   ├── sinistros.csv
+│   ├── apolice_cobertura.csv
+│   └── sinistro_oficina.csv
+│
+├── first_task.py         # Geração de dados fictícios
+├── second_task.py        # Validação de dados gerados
+├── third_task.py         # Geração de comandos SQL e inserção no Supabase
+├── insert_data.sql       # Arquivo SQL gerado para inserção de dados
+├── README.md             # (este arquivo)
+└── requirements.txt      # (bibliotecas necessárias)
+```
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+### 1. Preparação do ambiente
+
+Clone o repositório e instale as dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+O arquivo `requirements.txt` deve conter:
+
+```
+pandas
+supabase
+```
